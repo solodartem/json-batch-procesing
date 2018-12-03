@@ -1,0 +1,28 @@
+== Main goals
+
+Here it implementation of test task:
+
+Task: a small application should be built that does following:
+1. Create a set of 10 files, 10 JSON objects each. The only property in the each object is a UUID;
+2. Create another set of 10 files , 10 objects each. Unlike 1st set the each object has two properties now: a UUID and a group ID so they represent some (a small) number of groups. Construct this second set so that a small fraction of the items in the second set have UUIDs that do not appear in the first set;
+3. Load all the files into a database;
+4. Using data in a database find all groups of objects from the 2nd set grouped by group ID that contain unknown items (items whose UUIDs are not in the 1st set)
+
+The resulting codebase should be assumed as production ready. Your submission should be a demonstration of your opinion of what consists of production ready code, in terms of maintainability, reliability, performance, where maintainability implies readability, debugability, test coverage, etc. The user interface is a basic CLI.
+In this example, work with 10 files of 10 objects, but imagine that the code, once in production, will have to run on 50 mb of new files per night.
+There is a full freedom of choice of technologies, tools, programming languages etc.
+
+== How implemented
+
+Solution build on top of Java 8, Spring Framework, String batch
+Added required readers and writes for Json files format and DB
+
+== How to run
+Simply run command
+mvn spring-boot:run
+
+== Summary
+
+Hope my solution looks fine J
+
+
