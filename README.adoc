@@ -14,11 +14,12 @@ There is a full freedom of choice of technologies, tools, programming languages 
 
 == How implemented
 
-Solution build on top of Java 8, Spring Framework, String batch
-Added required readers and writes for Json files format and DB
+Solution build on top of Java 8, Spring Framework, String batch.
+To implement required functionality was added required readers and writes for Json files format and DB
 
 == How to run
 Simply run command
+[source, bat]
 mvn spring-boot:run
 
 == Summary
